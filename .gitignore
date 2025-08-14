@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pop & Tea — Bubble Tea en Tumbaco</title>
+  <meta name="description" content="Pop & Tea: bubble tea fresco, personalizable y listo para recoger. Pide por WhatsApp y explota de sabor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --turquesa:#19c2c2;
+      --turquesa-osc:#12a3a3;
+      --gris-900:#1f2937;
+      --gris-700:#374151;
+      --hueso:#f7f3ee;
+      --blanco:#ffffff;
+      --borde:rgba(31,41,55,.15);
+      --grad: linear-gradient(135deg, var(--turquesa) 0%, #8fe9e9 100%);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Poppins",sans-serif;color:var(--gris-900);background:var(--hueso);line-height:1.6;}
+    a{text-decoration:none}
+    header{background:var(--hueso);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--borde);}
+    header img{height:50px}
+    nav a{margin-left:15px;color:var(--gris-900);}
+    .btn{background:var(--turquesa);color:var(--blanco);padding:10px 20px;border-radius:30px;transition:.3s;}
+    .btn:hover{background:var(--turquesa-osc);}
+    section{padding:40px 20px;max-width:1100px;margin:auto;}
+    h2{color:var(--gris-900);}
+    .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+    .card{background:var(--blanco);padding:20px;border-radius:15px;box-shadow:0 2px 6px rgba(0,0,0,.05);}
+    footer{background:var(--blanco);padding:20px;border-top:1px solid var(--borde);text-align:center;}
+    footer a{margin:0 10px;color:var(--gris-900);}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;align-items:center;gap:10px">
+      <img src="logo.png" alt="Logo Pop & Tea">
+      <h1>Pop & Tea</h1>
+    </div>
+    <nav>
+      <a href="#menu">Menú</a>
+      <a href="#ordenar">Ordenar</a>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://wa.me/593XXXXXXXXX" target="_blank">WhatsApp</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Explota de sabor, exprésate en cada sorbo</h2>
+    <p>Bubble tea fresco, personalizable y ecoamigable en Tumbaco. Pide por WhatsApp y pasa a retirar sin filas.</p>
+    <a href="https://wa.me/593XXXXXXXXX" class="btn" target="_blank">Hacer Pedido</a>
+  </section>
+
+  <section id="menu">
+    <h2>Menú</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <h3>Clásico Tapioca</h3>
+        <p>Té negro + leche (entera o vegetal) + perlas de tapioca.</p>
+        <p><strong>$3.50</strong></p>
+      </div>
+      <div class="card">
+        <h3>Mango Pop</h3>
+        <p>Té frutal de mango + jellies de coco + hielo frappé.</p>
+        <p><strong>$3.80</strong></p>
+      </div>
+      <div class="card">
+        <h3>Matcha Cream</h3>
+        <p>Matcha + leche de almendras + perlas negras.</p>
+        <p><strong>$4.20</strong></p>
+      </div>
+      <div class="card">
+        <h3>Lychee Fresh</h3>
+        <p>Té verde + lychee + jellies de fruta.</p>
+        <p><strong>$3.90</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ordenar">
+    <h2>Ordena por WhatsApp</h2>
+    <p>Personaliza tu bebida y pasa a retirar. Rápido y sin filas.</p>
+    <a href="https://wa.me/593XXXXXXXXX" class="btn" target="_blank">Enviar Pedido</a>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Pop & Tea — “Explota de sabor, exprésate en cada sorbo”.</p>
+    <div>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://wa.me/593XXXXXXXXX" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
